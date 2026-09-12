@@ -5,6 +5,36 @@
 - Name: Matteo Ferrantelli
 - Email: matteo.ferrantelli67@login.cuny.edu
 
+## final.architecture_evidence
+
+The node is reactive because it gets current LiDAR data and decides what the next step should be. A hybrid system would need to have longer term data storage to start mapping the environment and have a planned route. 
+
+## final.course_reflection
+
+I think the part I enjoyed the most was seeing and working with simulated LiDAR data. I had never looked at LiDAR data before, so it was interesting to see how those distance readings can directly affect a robot’s decisions. Seeing the robot use that information to decide whether to keep moving or stop made the sensor data feel much more practical and connected to real robot behavior.
+
+## final.hardware_next
+
+Probably testing various LiDAR outputs and how the system reacts to them, especially readings near the stopping threshold, invalid values, and cases where no valid front measurement is available. 
+
+## final.middleware_debugging
+
+The command can be followed through each node and topic in the ROS graph. One example would be to first check whether the controller sends a command to /student_cmd_vel. Then check if the command guard receives it and sends an approved command to /cmd_vel. Finally, check if the Gazebo bridge receives /cmd_vel. This shows where the command stops moving through the system.
+
+## final.system_synthesis
+
+Robotics software is difficult because many different systems have to work together at the same time and adjust for errors or missing information. A robot has to read sensors, make decisions, send movement commands, and handle missing data and communication problems. In simulation, I saw that commanded motion does not produce exactly the motion I predicted, such as the straight-line trial, where I predicted about 0.45 meters of movement, but the recorded displacement was about 0.309 meters. 
+
+The behavior I implemented was a reactive architecture. The functions used current LiDAR data and decided whether the robot should move or stop. The front_distance() function found the closest valid measurement in front of the robot. The decide_velocity() function compared that distance to a stopping threshold. If an obstacle was too close, or if there was no valid measurement, the robot stopped. It is easier to implement, but does not plan ahead or find another path around an obstacle.
+
+ROS 2 middleware connected the simulator, the obstacle_guard node, the command guard, RViz, and the evidence collector. The Gazebo bridge created simulated LiDAR data on /scan. The obstacle_guard node sent movement decision to/student_cmd_vel. The command guard viewed/student_cmd_vel, checked the command, and sent the approved command to/cmd_vel. Timing and bad sensor data were also important for safety. The velocity function stopped when the front LiDAR data was invalid. The system also used a timeout, so the robot would stop if new commands stopped arriving for 0.5 seconds. A final zero command stopped normal motion at the end of a trial. The command guard was the layer that could restrict unsafe motion.
+
+Overall, this lab showed me that even simple robot behavior depends on several parts working correctly together. It also made the safety features feel practical instead of theoretical, because I could see how one bad reading or missed command could change what the robot did.
+
+## final.timing_evidence
+
+The 0.5-second timeout showed why a robot needs a backup safety behavior when communication or software fails.
+
 ## mission_1.command_path_explanation
 
 A proposed movement command goes through /student_cmd_vel. The guard checks it, then sends the command, if approved, to /cmd_vel to the robot.f
@@ -48,6 +78,18 @@ All my predictions have greater displacement than the actual test. For the strai
 ## mission_2.safety_explanation
 
 The command guard checks if each proposed movement is within the given speed limits and turning radii. The final zero command ends the robot's movement by bringing the velocity down to 0. The timeout command prevents a robot from continuing during a crash by sending a stop command after .5 seconds without an update. 
+
+## mission_3.data_to_command
+
+Front_distance() determines which LiDAR measurements are in front of the robot and valid. The decide_velocity() function checks how far the obstacle is and, if it is far enough, then the robot can move. 
+
+## mission_3.missing_data_safety
+
+The robot stops because a missing measurement could mean the object is too close/it may not be safe to move. 
+
+## mission_3.system_layers
+
+The command guard checks the commands supplied by the ROS node. The ROS node/obstacle guard uses the decision functions. 
 
 ## part_1.activity
 
