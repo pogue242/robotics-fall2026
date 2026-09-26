@@ -1,0 +1,1 @@
+The robot will do four arcs with a radius of 0.30 m. There will be two sets of turns, both being +45° and then -45°. I will use a forward speed of 0.12 m/s and angular speeds of +0.40 or -0.40 rad/s, which gives the required 0.30 m radius. After the fourth arc, the robot should stop and finish facing the same direction it started.

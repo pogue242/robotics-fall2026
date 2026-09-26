@@ -1,0 +1,3 @@
+# Technical synthesis
+
+A robot motion program can be technically correct and still fail as part of a sociotechnical system because they may not consider all needs or collective goods, instead prioritizing its own. An example of this can be seen with self-driving cars, namely Waymo. While they are safer than humans, they sometimes get themselves in niche situations that a human would typically not. These situations are anomalous/hard to train on, such as when Waymo drove through a festival recently (very slowly) or when it drove through a police stop. To evaluate a system like this, I would want evidence showing how it handles rare or unexpected situations, how often human intervention is needed, and how nearby people respond to its behavior.
