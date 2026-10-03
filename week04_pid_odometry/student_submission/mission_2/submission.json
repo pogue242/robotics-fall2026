@@ -1,0 +1,36 @@
+{
+  "schema_version": 2,
+  "created_at": "2026-10-03T01:03:13",
+  "mission_id": "mission_2",
+  "student": {
+    "name": "Matteo Ferrantelli",
+    "student_id": "matteo.ferrantelli67@login.cuny.edu",
+    "section": ""
+  },
+  "explanations": {
+    "prediction": "The estimated forward distance will be larger than it moved, and the estimated lateral distance will be an undercount",
+    "calibration_analysis": "I predicted exactly what happened. The forward drift needed to be lowered, and I needed to raise the lateral drift. Some miscalibration can happen due to small effects building up."
+  },
+  "params": {
+    "forwardInPerTick": 0.0498,
+    "strafeInPerTick": 0.0499
+  },
+  "metrics": {
+    "max_error_in": 0.28160727547418596,
+    "final_error_in": 0.1515987123956009,
+    "passed": true
+  },
+  "result": {
+    "passed": true,
+    "maxError": 0.28160727547418596,
+    "finalError": 0.1515987123956009,
+    "params": {
+      "forwardInPerTick": 0.0498,
+      "strafeInPerTick": 0.0499
+    }
+  },
+  "csv_files": {},
+  "activity_gifs": [
+    "latest_odometry_test.gif"
+  ]
+}
