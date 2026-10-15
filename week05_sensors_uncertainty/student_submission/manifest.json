@@ -1,0 +1,35 @@
+{
+  "files": {
+    "autosave/responses.json": "f912a46b33bc7d2fbf5d7a02324284e9fed023fe850883c836877713679c0772",
+    "autosave/responses.md": "594812e2cdeafc2edcbaa450492e701d9e49b4466e2077d4a555a24f7c14e27f",
+    "autosave/responses.recovery.df287f5093e94c9d86d240ee8d6ea06f.json": "ddb8fd2b40ce97e30c6f787bc5c83a4c8e732ccf3f3b31b1c1a50828306455ca",
+    "final_reflection.md": "46fb5d4c7b7f2e5d26ffc596790aeff9cb2e3d0de83ce31ff6f046164b72f801",
+    "final_synthesis.md": "df0e2d70384fb490d4e7235f1132bf641bee76ea8bbcdd85e3550d590569b476",
+    "mission_1/evidence.png": "e11081278195b1e6f97856b265e2b4e6ed026e4fa03102971c9c284f8cbe30d0",
+    "mission_1/explanation.md": "f4e0f0e864bc60cf9b8f3472460d03df95be86df3b3de55c7cc9e9e73ae50b8c",
+    "mission_1/measurements.csv": "63a81936fd42913749c3a650547000f845ba0ead9b6cdea83c95c3746674d77c",
+    "mission_1/submission.json": "d4926e3f01111c2079ab5ddc6cb5f82f25f863b20f19c972453fd698fd5813ea",
+    "mission_2/evidence.png": "3a482ec61a95cb89950a811acaffad465b41199b5dc0c865a2caddfce5ee48c3",
+    "mission_2/explanation.md": "e126026de278d05ab42d67e61b10a0bdf11f41927ea2b81111983f95336bbc53",
+    "mission_2/measurements.csv": "524438acfba384730af212df258f5be22f2ec3e6eb560f104433069c17fe8c0c",
+    "mission_2/submission.json": "d5611851ced1c26497d7ba24218f0cb67ad08311d7e21a54297730c0d60312c2",
+    "mission_3/explanation.md": "18ae9bf8fa8347cd3e530d05549933f84df3d3d9459603e388f83c2b17d919f7",
+    "mission_3/measurements.csv": "966c69765cc4115c6337330fc4cf18cab78bdacf00d1eaedae7d105c24d9f03b",
+    "mission_3/submission.json": "6fe9eb14720a65a0650782200bdb3cbdeb09a3d416de0db1b39f2b4eaeb830d3",
+    "student.json": "0c459127b95bb909582f23dd8affeaf2ec647703cc527d1f78827f4f6f47c99b"
+  },
+  "generated_at": "2026-10-15T06:52:12.483671+00:00",
+  "lab_id": "week05_sensors_uncertainty",
+  "mission_signatures": {
+    "mission_1": "acfd3028dae36592",
+    "mission_2": "87d439e95febf17b",
+    "mission_3": "5ebbd4dbd028ba28"
+  },
+  "response_signature": "b77a17337fbbf453",
+  "schema_version": 2,
+  "student": {
+    "course_id": "24416767",
+    "email": "matteo.ferrantelli67@login.cuny.edu",
+    "name": "Matteo Ferrantelli"
+  }
+}
