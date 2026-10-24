@@ -1,0 +1,66 @@
+{
+  "artifact_hashes": {
+    "analysis.json": "7bdc6eb68a8580f28f96421018c6366d0af643e04d50e3effe919c3eb10090d4",
+    "evidence.json": "ef1582273216d44c45fb9de2f124f03a1616e2ef36df9b00358ce6e22f78a875",
+    "explanation.md": "b7652a94e57b056fd0cc79e916f4affef1041760a03bcf44a3f57ff95792ebb0",
+    "map.pgm": "8b159b9d4daee959d53ffedd9762f09cc49c206074630ef7801deb2e359b3b4a",
+    "map.yaml": "b5278f338f438e6125e75de11282d3aa977788094d3f8321ef867f0b4761a8d5",
+    "rviz_screenshot.png": "e8c2abd99c6886c5aa43d168dbec6158b98bfa26993f44406026a9def5dafc27"
+  },
+  "evidence": {
+    "state_signature": "0ce74436b8a8c9db",
+    "strategy_1": {
+      "captured_at": "2026-10-24T01:18:35.699929+00:00",
+      "duration_minutes": 5.0,
+      "map_image": "map.pgm",
+      "map_yaml": "map.yaml",
+      "metrics": {
+        "border_contact_fraction": 0.0,
+        "free_fraction": 0.09614992177402898,
+        "height": 122,
+        "known_fraction": 0.10876811101285627,
+        "largest_component_cells": 116,
+        "map_area_m2": 73.50500000000001,
+        "occupied_components": 40,
+        "occupied_fraction": 0.012618189238827291,
+        "resolution": 0.05,
+        "speckle_fraction": 0.11859838274932614,
+        "unknown_fraction": 0.8912318889871438,
+        "width": 241
+      },
+      "quality_score": 26.2,
+      "schema_version": 1,
+      "strategy": "pint",
+      "world_id": "turtlebot3_house"
+    },
+    "strategy_2": {
+      "captured_at": "2026-10-24T04:11:29.438104+00:00",
+      "duration_minutes": 15.0,
+      "map_image": "map.pgm",
+      "map_yaml": "map.yaml",
+      "metrics": {
+        "border_contact_fraction": 0.0205078125,
+        "free_fraction": 0.46412420382165603,
+        "height": 200,
+        "known_fraction": 0.5011305732484076,
+        "largest_component_cells": 571,
+        "map_area_m2": 157.0,
+        "occupied_components": 74,
+        "occupied_fraction": 0.03700636942675159,
+        "resolution": 0.05,
+        "speckle_fraction": 0.02280550774526678,
+        "unknown_fraction": 0.49886942675159235,
+        "width": 314
+      },
+      "quality_score": 88.5,
+      "schema_version": 1,
+      "strategy": "left",
+      "world_id": "turtlebot3_house"
+    }
+  },
+  "lab_id": "week06_slam_localization",
+  "mission_id": "mission_2",
+  "saved_at": "2026-10-24T04:28:54.012270+00:00",
+  "schema_version": 2,
+  "state_signature": "0ce74436b8a8c9db"
+}

@@ -1,0 +1,35 @@
+{
+  "files": {
+    "autosave/responses.json": "5e1e11d705a6bf2165597ed33d2d3329e89abacf8afa874ec601fcc9833975f2",
+    "autosave/responses.md": "9e8fc860fe209fded05070b2b3d7783c38b590587e7f238e2ea315d6695fd4fb",
+    "final_reflection.md": "068ad993cb55ac9671d53da1d90927f86077bfe4e2fe232daa20ccaba899568b",
+    "final_synthesis.md": "36ff4f4a0cbea73c612267923098d1a113e92f88c75881d359b0f2c5b6217257",
+    "mission_1/analysis.json": "a90116861e48420584053ce9fccf231f328e123e9cec7b65794994f2c7d3c363",
+    "mission_1/evidence.json": "a9cd20a5ca59c06fb85360146d8ae77c8882b6347a2921f827764b9434804da6",
+    "mission_1/explanation.md": "ee65dc5a785a20d6cc23b606595cf2b4bdf6e705c01e7005377c203d2f5f9216",
+    "mission_1/map.pgm": "9d0d4264c5e4671eb753e45da34f2b13ad2f256273c1894afab45c8fd089ea6d",
+    "mission_1/map.yaml": "9577a805003138c54004409a22e31e2869a57f25ec6e02fcaf7bf776544b067a",
+    "mission_1/rviz_screenshot.png": "be553601b65db45923514a165dd3aa6f5bbb943783c9be4a84cd276056629128",
+    "mission_1/submission.json": "0bfc68a4db62f0b4af051bd343f63b248af27f0f7ea519c928ae48ebd1dd9001",
+    "mission_2/analysis.json": "7bdc6eb68a8580f28f96421018c6366d0af643e04d50e3effe919c3eb10090d4",
+    "mission_2/evidence.json": "ef1582273216d44c45fb9de2f124f03a1616e2ef36df9b00358ce6e22f78a875",
+    "mission_2/explanation.md": "b7652a94e57b056fd0cc79e916f4affef1041760a03bcf44a3f57ff95792ebb0",
+    "mission_2/map.pgm": "8b159b9d4daee959d53ffedd9762f09cc49c206074630ef7801deb2e359b3b4a",
+    "mission_2/map.yaml": "b5278f338f438e6125e75de11282d3aa977788094d3f8321ef867f0b4761a8d5",
+    "mission_2/rviz_screenshot.png": "e8c2abd99c6886c5aa43d168dbec6158b98bfa26993f44406026a9def5dafc27",
+    "mission_2/submission.json": "d1fc50e7ce676c9344f92c8779a4c3dad6c46617c0acd8e1124943b759332603",
+    "student.json": "4f686385d3de1ec8e918fa3d1961519ac9294930c5dd02a053cea587e927f553"
+  },
+  "generated_at": "2026-10-24T04:56:00.413528+00:00",
+  "lab_id": "week06_slam_localization",
+  "mission_signatures": {
+    "mission_1": "0bc3802f449f7004",
+    "mission_2": "0ce74436b8a8c9db"
+  },
+  "response_signature": "7cc01df55681a7ed",
+  "schema_version": 2,
+  "student": {
+    "email": "matteo.ferrantelli67@login.cuny.edu",
+    "name": "Matteo Ferrantelli"
+  }
+}
