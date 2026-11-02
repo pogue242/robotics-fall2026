@@ -1,0 +1,1 @@
+This lab felt like an intro to the micro mouse challenge. It would be fun to have a lab/challenge to create a single controller and visual detection system to perform on a set of unknown obstacles and courses. 
