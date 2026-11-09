@@ -1,0 +1,5 @@
+{
+  "mission_2.prediction": "I think BFS will outperform DFS on the constrained map because DFS will turn repeatedly and find a slower route. However, both will be successful on the open map, but DFS will explore fewer cells because there are so many options for BFS. I also predict that A* will finish sooner than DFS on the constrained map, and faster than BFS for both. ",
+  "mission_2.performance": "On the constrained map, A* succeeded in 90.19 seconds and traveled 23.87 meters. DFS ended with controller_failed after 144.95 seconds and traveled 31.43 meters. This supported my prediction because A* reached the goal sooner, while DFS did not finish. In the attempt plots, A* followed its shorter route through the turns, while DFS stopped before reaching the goal.",
+  "mission_2.choice": "I would choose Nav2 as the delivery planner. It succeeded in 35.40 seconds on the open map and 73.56 seconds on the constrained map."
+}

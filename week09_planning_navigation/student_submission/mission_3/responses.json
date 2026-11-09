@@ -1,0 +1,5 @@
+{
+  "mission_3.prediction": "I mainly changed  the influence distance from 1.0 meter to 1.5 meters. Influence distance means the robot starts moving at that distance from the person. Repulsion strength changes the arc the robot takes. ",
+  "mission_3.comparison": "For A*, social_2 had the largest completed minimum person clearance at 0.79 meters with 0 seconds in personal space. The baseline had 0.74 meters of clearance and 0.70 seconds in personal space. For RRT, social_1 had the largest clearance at 1.75 meters, and both had 0 seconds in personal space. Social_1 did not cost RRT more time or distance because it finished in 43.40 seconds and traveled 11.53 meters, slightly less than the baseline.",
+  "mission_3.recommendation": "I would keep RRT with social_1 for this scenario because it took less time and did not enter the personal space boundary. It had 1.75 meters of minimum person clearance and finished in 43.40 seconds while A* with social_2 also succeeded but had only 0.79 meters of clearance and took 46.42 seconds. "
+}

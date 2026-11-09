@@ -1,0 +1,14 @@
+{
+  "run_id": "open_nav2_0_baseline_abecedde0b",
+  "map": "open",
+  "planner": "nav2",
+  "sample": 0,
+  "point": {
+    "t": 2.4,
+    "x": -3.874999999999996,
+    "y": -2.875000000000257,
+    "speed_mps": 3.9223724095094337e-14
+  },
+  "tracking_error_m": 1.3788551972160913e-11,
+  "feature": "Straight segment"
+}
