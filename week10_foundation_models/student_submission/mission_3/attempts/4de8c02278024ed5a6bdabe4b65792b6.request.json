@@ -1,0 +1,29 @@
+{
+  "job_id": "4de8c02278024ed5a6bdabe4b65792b6",
+  "kind": "language",
+  "case": "custom",
+  "prompt": "x = column, y = row. Use the first matching rule:\n\n(x,y)=(11,1) -> STOP\ny=1 and x<7 -> RIGHT\nx=7 and y<7 -> DOWN\ny=7 and x<11 -> RIGHT\nx=11 and y>1 -> UP\notherwise -> UP\nDo not repeat an action that was blocked",
+  "phase": "custom",
+  "parent_id": null,
+  "requested_at": "2026-11-14T07:21:29.194403+00:00",
+  "comparison_ids": [
+    "0280b49c49864cb2b744817b7610720e",
+    "42afbda9de5d4796b864cefcf9679f12",
+    "6d78ec3cf1804b1da7aeb8ab1e98f881"
+  ],
+  "task": "robot",
+  "robot_state": {
+    "position": [
+      1,
+      7
+    ],
+    "step": 0,
+    "history": [],
+    "finished": false,
+    "goal_reached": false,
+    "first_goal_step": null,
+    "last_feedback": "No previous action.",
+    "last_decision": null
+  },
+  "simulator_contract": "8da30a943bd97ee39237aa05e8e6800fecdecbef3ce692d7d4e48f851679060f"
+}

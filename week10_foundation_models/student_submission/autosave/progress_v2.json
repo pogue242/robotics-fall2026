@@ -1,0 +1,86 @@
+{
+  "stage": "final_submission",
+  "responses": {
+    "m1_analysis": "My request output is similar to the \"clear request\" from section 1. In fact, I think the response was worse because the llm responded with \"can do\" instead of acting as it did, but I don't think this was prompt-related and is just because of how small the model is. I think one drawback of my command was \"any additional observations.\" It is too vague, and especially for a smaller model and cheaper hardware, it can make observations take too long",
+    "m2_analysis": "I chose the identify task and the new prompt produced a better result than the originals. The main difference was it provided an explanation as to why it thought it was a tape measure. It pointed to the hole in it and the colors. The response was so long that its message was cut off. My updated request took more than 8 seconds, nearly 4 times longer than the original. However, I told it to respond as a pirate and it ignored that (when requesting to act as a pirate without asking it to identify anything, it acted as a pirate)\n\nI tested a few other prompts. I found out that if I put the word compass in the prompt, it identifies it as a compass.",
+    "m3_analysis": "I tried a variety of methods: specific coordinate rules, following the wall with open cell rules, and, in frustration of trying to make this work, used 5,6 Sol to look through lab files and found a prompt in scripts/check_robot_inference.py, but none reached the goal. The waypoint prompt made 35 moves, had 15 blocked moves, and ended at (1,2) after 50 steps. It kept moving up into the wall and then down instead of switching to the right. Prompt 2 did better by reaching (7,1), but it also failed.",
+    "final_synthesis": "This current model, especially with the current set up/prompts, is not very useful for the robot. In Mission 1, clearer instructions helped the model suggest actions the robot could perform, but it still assumed the cup was empty without evidence. It also said \"can do\" instead of turning it into specific actions, besides prompt 1. In Mission 2, the model correctly located the black post but incorrectly called the drawing compass a tape measure. In Mission 3, the action checks stopped the robot from crossing walls, but they could not make it follow the route. In its current form, the smaller models, while better than I expected, could not translate into specific robot advice. However, I think with better hardware and tailored prompts for specific environments, it will actually provide some specific benefits ",
+    "final.course_reflection": "I really enjoyed this lab, and it was cool to see the capabilities of these small language models when it comes to these tasks. It made me think about how it would be cool to do these labs, but maybe with the ability to remote into Hunter's computers so we can compare the performance of the same model on different hardware and maybe be able to run more compute-heavy models. I was actually surprised at the results of some of these models on my very poor hardware. I also wonder how even the small models would perform with a more specific environment/more tools available. Frontier models are starting to get really good at controlling irl robots, so I imagine smaller models will start performing decently well in a year or two"
+  },
+  "student": {
+    "name": "Matteo Ferrantelli",
+    "email": "matteo.ferrantelli67@login.cuny.edu"
+  },
+  "tutorial_step": 5,
+  "tutorial_reviewed": 6,
+  "controls": {
+    "control_ground_instruction": "Point to the cup",
+    "control_demo_step": 0,
+    "control_adapt_choice": "Zero-shot prompting",
+    "control_adapt_instruction": "Move the blue cup to the tray",
+    "control_adapt_scenario": "The request does not identify the intended cup",
+    "control_adapt_records": 2,
+    "control_movement_token": 84,
+    "control_chunk_hz": 10,
+    "control_chunk_size": 3,
+    "control_movement_angle": 0,
+    "control_validate_conf_navigate": 0.9,
+    "control_validate_case": "Inspect an ambiguous cup",
+    "control_validate_age_navigate": 2.8,
+    "control_validate_age_inspect": 4.7,
+    "control_validate_conf_inspect": 0.9,
+    "control_validate_age_ambiguous": 0.1,
+    "control_validate_conf_ambiguous": 0.9,
+    "control_live_language_active": "22298832a98a438ea43f0c19db774df3",
+    "control_live_language_runs": [
+      "850f52e3b72b4f2280b8c81fd3fe5335",
+      "5aefd6336743435fad3cf7745870e44d",
+      "ec0a194e92a64f4bac61aa061a1b97ba",
+      "22298832a98a438ea43f0c19db774df3"
+    ],
+    "control_live_language_custom_prompt": "Travel from your starting location to the shelf where the cup is located. Inspect the cup and report if it is empty and any additional observations",
+    "control_live_vision_active": "c619ecf2ee594dbca4a90a3c4f3fe64e",
+    "control_live_vision_runs": [
+      "7b365ce9a6d34a22919d8174497f6ff7",
+      "74217c635a62451093fe65643e4cfb4b",
+      "88eb00db19c347e28d858159f716a91c",
+      "341e4b99d26f4abfac01eb4f82e299ac",
+      "291780d6991048a59ba0a28f8b0dbabe",
+      "0b745658cf6448c1b7d5405f6f94d844",
+      "aa008524d91a429698091fd9674b2b3d",
+      "b0453e796d5345bcaf963c85cbe1e938",
+      "da04b25bb9024b8a9f08d69a3e6a4030",
+      "c619ecf2ee594dbca4a90a3c4f3fe64e"
+    ],
+    "control_live_vision_custom_prompt": "Identify task: Identify the tool in the foreground. Name the tool, describe the visible features that support your answer, and state if you are uncertain, but as a pirate",
+    "control_robot_active": "0feb67d5290b4c88a35a853e699062f4",
+    "control_robot_runs": [
+      "0280b49c49864cb2b744817b7610720e",
+      "42afbda9de5d4796b864cefcf9679f12",
+      "6d78ec3cf1804b1da7aeb8ab1e98f881",
+      "280730ad0e3443d5ac7937bdc0cfea20",
+      "30418ddf49b6425a9bf96c199ff4a93c",
+      "4de8c02278024ed5a6bdabe4b65792b6",
+      "11b8bc0270444033963e2ac3b0bf3050",
+      "f8e3e0713f7d4ac58d2bd6d1c16f2cf3",
+      "0feb67d5290b4c88a35a853e699062f4"
+    ],
+    "control_robot_custom_prompt": "Reach (11,1) while staying beside a wall. Prefer the RIGHT command whenever the next cell is free and remains beside a wall. If RIGHT is blocked at column 3, follow the wall UP to row 1. If RIGHT is blocked at column 7, follow the wall DOWN to row 7. If RIGHT is blocked at column 11, follow the outer wall UP to row 1. Do not move away from the wall."
+  },
+  "guided_version": 4,
+  "guided_seen": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "response_widgets": [
+    "m1_analysis",
+    "m2_analysis",
+    "m3_analysis",
+    "final_synthesis"
+  ],
+  "version": 2
+}

@@ -1,0 +1,3 @@
+I chose the identify task and the new prompt produced a better result than the originals. The main difference was it provided an explanation as to why it thought it was a tape measure. It pointed to the hole in it and the colors. The response was so long that its message was cut off. My updated request took more than 8 seconds, nearly 4 times longer than the original. However, I told it to respond as a pirate and it ignored that (when requesting to act as a pirate without asking it to identify anything, it acted as a pirate)
+
+I tested a few other prompts. I found out that if I put the word compass in the prompt, it identifies it as a compass.

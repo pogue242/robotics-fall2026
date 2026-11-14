@@ -1,0 +1,29 @@
+{
+  "job_id": "11b8bc0270444033963e2ac3b0bf3050",
+  "kind": "language",
+  "case": "custom",
+  "prompt": "Reach the blue target at (11,1). Reply UP until row 1. Then reply RIGHT until column 7. At (7,1), reply DOWN until row 7. Then reply RIGHT until column 11. At (11,7), reply UP until row 1. Do not repeat a blocked action.",
+  "phase": "custom",
+  "parent_id": null,
+  "requested_at": "2026-11-14T07:28:35.455649+00:00",
+  "comparison_ids": [
+    "0280b49c49864cb2b744817b7610720e",
+    "42afbda9de5d4796b864cefcf9679f12",
+    "6d78ec3cf1804b1da7aeb8ab1e98f881"
+  ],
+  "task": "robot",
+  "robot_state": {
+    "position": [
+      1,
+      7
+    ],
+    "step": 0,
+    "history": [],
+    "finished": false,
+    "goal_reached": false,
+    "first_goal_step": null,
+    "last_feedback": "No previous action.",
+    "last_decision": null
+  },
+  "simulator_contract": "8da30a943bd97ee39237aa05e8e6800fecdecbef3ce692d7d4e48f851679060f"
+}

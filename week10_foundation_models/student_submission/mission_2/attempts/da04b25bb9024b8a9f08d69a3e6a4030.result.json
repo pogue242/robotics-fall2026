@@ -1,0 +1,40 @@
+{
+  "status": "complete",
+  "record": {
+    "job_id": "da04b25bb9024b8a9f08d69a3e6a4030",
+    "kind": "vision",
+    "case": "custom",
+    "prompt": "Identify task: Identify the tool in the foreground. Name the tool, describe the visible features compass that support your answer, and state if you are uncertain, but as a pirate",
+    "phase": "custom",
+    "parent_id": null,
+    "requested_at": "2026-11-14T06:27:07.935907+00:00",
+    "comparison_ids": [
+      "7b365ce9a6d34a22919d8174497f6ff7",
+      "74217c635a62451093fe65643e4cfb4b",
+      "88eb00db19c347e28d858159f716a91c"
+    ],
+    "output": "Task: Identify the tool in the foreground.\n\nAnswer: Compass.\n\nDescription: The foreground contains a wooden table with a metal compass on it. The compass is a classic tool used for navigation, and it is positioned in the center of the table. The metal compass has a simple design with a circular dial and a needle that points north. The dial is marked with numbers, which",
+    "model": "HuggingFaceTB/SmolVLM-500M-Instruct",
+    "model_revision": "a7da5b986cb59b408707209984f360a5f4ad7e47",
+    "system_prompt": "",
+    "model_input": "Identify task: Identify the tool in the foreground. Name the tool, describe the visible features compass that support your answer, and state if you are uncertain, but as a pirate",
+    "image_sha256": "0c0e4365ce25ec9f22daf3bd4d95883bddd9782289ec17fdb7d2b7c4e8b280ff",
+    "image_preprocessing": {
+      "longest_edge": 512,
+      "image_splitting": false
+    },
+    "generated_tokens": 80,
+    "max_new_tokens": 80,
+    "generation_seconds": 8.105,
+    "truncated": true,
+    "decoding": "greedy",
+    "device": "cpu",
+    "live_inference": true,
+    "library_versions": {
+      "torch": "2.8.0+cpu",
+      "transformers": "4.57.1"
+    },
+    "output_constraint": null,
+    "completed_at": "2026-11-14T06:27:16.207467+00:00"
+  }
+}

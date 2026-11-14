@@ -1,0 +1,14 @@
+{
+  "job_id": "0b745658cf6448c1b7d5405f6f94d844",
+  "kind": "vision",
+  "case": "custom",
+  "prompt": "Is the image in the foreground a tape measure or a compass?",
+  "phase": "custom",
+  "parent_id": null,
+  "requested_at": "2026-11-14T06:25:34.075807+00:00",
+  "comparison_ids": [
+    "7b365ce9a6d34a22919d8174497f6ff7",
+    "74217c635a62451093fe65643e4cfb4b",
+    "88eb00db19c347e28d858159f716a91c"
+  ]
+}

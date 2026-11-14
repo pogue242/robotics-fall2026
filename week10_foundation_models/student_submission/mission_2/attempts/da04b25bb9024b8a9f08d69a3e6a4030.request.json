@@ -1,0 +1,14 @@
+{
+  "job_id": "da04b25bb9024b8a9f08d69a3e6a4030",
+  "kind": "vision",
+  "case": "custom",
+  "prompt": "Identify task: Identify the tool in the foreground. Name the tool, describe the visible features compass that support your answer, and state if you are uncertain, but as a pirate",
+  "phase": "custom",
+  "parent_id": null,
+  "requested_at": "2026-11-14T06:27:07.935907+00:00",
+  "comparison_ids": [
+    "7b365ce9a6d34a22919d8174497f6ff7",
+    "74217c635a62451093fe65643e4cfb4b",
+    "88eb00db19c347e28d858159f716a91c"
+  ]
+}

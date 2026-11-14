@@ -1,0 +1,380 @@
+{
+  "version": 2,
+  "run_id": "739f8d2fb5244c47b36509436a903246",
+  "mission": "mission_2",
+  "saved_at": "2026-11-14T06:28:50.161314+00:00",
+  "settings": {
+    "experiment": "local-live-v2",
+    "model": {
+      "id": "HuggingFaceTB/SmolVLM-500M-Instruct",
+      "revision": "a7da5b986cb59b408707209984f360a5f4ad7e47"
+    }
+  },
+  "rows": [
+    {
+      "job_id": "7b365ce9a6d34a22919d8174497f6ff7",
+      "kind": "vision",
+      "case": "identify",
+      "prompt": "What tool is lying in the foreground of this workbench?",
+      "phase": "baseline",
+      "parent_id": null,
+      "requested_at": "2026-11-14T06:00:16.022507+00:00",
+      "comparison_ids": [],
+      "output": "Tape measure.",
+      "model": "HuggingFaceTB/SmolVLM-500M-Instruct",
+      "model_revision": "a7da5b986cb59b408707209984f360a5f4ad7e47",
+      "system_prompt": "",
+      "model_input": "What tool is lying in the foreground of this workbench?",
+      "image_sha256": "0c0e4365ce25ec9f22daf3bd4d95883bddd9782289ec17fdb7d2b7c4e8b280ff",
+      "image_preprocessing": {
+        "longest_edge": 512,
+        "image_splitting": false
+      },
+      "generated_tokens": 4,
+      "max_new_tokens": 80,
+      "generation_seconds": 2.93,
+      "truncated": false,
+      "decoding": "greedy",
+      "device": "cpu",
+      "live_inference": true,
+      "library_versions": {
+        "torch": "2.8.0+cpu",
+        "transformers": "4.57.1"
+      },
+      "output_constraint": null,
+      "completed_at": "2026-11-14T06:00:27.587580+00:00"
+    },
+    {
+      "job_id": "74217c635a62451093fe65643e4cfb4b",
+      "kind": "vision",
+      "case": "spatial",
+      "prompt": "Where is the black vertical metal post relative to the tool in the foreground?",
+      "phase": "baseline",
+      "parent_id": null,
+      "requested_at": "2026-11-14T06:00:43.424339+00:00",
+      "comparison_ids": [],
+      "output": "The black vertical metal post is to the right of the tool in the foreground.",
+      "model": "HuggingFaceTB/SmolVLM-500M-Instruct",
+      "model_revision": "a7da5b986cb59b408707209984f360a5f4ad7e47",
+      "system_prompt": "",
+      "model_input": "Where is the black vertical metal post relative to the tool in the foreground?",
+      "image_sha256": "0c0e4365ce25ec9f22daf3bd4d95883bddd9782289ec17fdb7d2b7c4e8b280ff",
+      "image_preprocessing": {
+        "longest_edge": 512,
+        "image_splitting": false
+      },
+      "generated_tokens": 17,
+      "max_new_tokens": 80,
+      "generation_seconds": 3.123,
+      "truncated": false,
+      "decoding": "greedy",
+      "device": "cpu",
+      "live_inference": true,
+      "library_versions": {
+        "torch": "2.8.0+cpu",
+        "transformers": "4.57.1"
+      },
+      "output_constraint": null,
+      "completed_at": "2026-11-14T06:00:46.624186+00:00"
+    },
+    {
+      "job_id": "88eb00db19c347e28d858159f716a91c",
+      "kind": "vision",
+      "case": "purpose",
+      "prompt": "A robot needs the correct tool for its task. Which object in this image should it pick up?",
+      "phase": "baseline",
+      "parent_id": null,
+      "requested_at": "2026-11-14T06:00:48.578067+00:00",
+      "comparison_ids": [],
+      "output": "The robot needs the correct tool for its task. The correct tool is a measuring tape.",
+      "model": "HuggingFaceTB/SmolVLM-500M-Instruct",
+      "model_revision": "a7da5b986cb59b408707209984f360a5f4ad7e47",
+      "system_prompt": "",
+      "model_input": "A robot needs the correct tool for its task. Which object in this image should it pick up?",
+      "image_sha256": "0c0e4365ce25ec9f22daf3bd4d95883bddd9782289ec17fdb7d2b7c4e8b280ff",
+      "image_preprocessing": {
+        "longest_edge": 512,
+        "image_splitting": false
+      },
+      "generated_tokens": 19,
+      "max_new_tokens": 80,
+      "generation_seconds": 4.019,
+      "truncated": false,
+      "decoding": "greedy",
+      "device": "cpu",
+      "live_inference": true,
+      "library_versions": {
+        "torch": "2.8.0+cpu",
+        "transformers": "4.57.1"
+      },
+      "output_constraint": null,
+      "completed_at": "2026-11-14T06:00:52.782907+00:00"
+    },
+    {
+      "job_id": "341e4b99d26f4abfac01eb4f82e299ac",
+      "kind": "vision",
+      "case": "custom",
+      "prompt": "Be a pirate",
+      "phase": "custom",
+      "parent_id": null,
+      "requested_at": "2026-11-14T06:15:09.942239+00:00",
+      "comparison_ids": [
+        "7b365ce9a6d34a22919d8174497f6ff7",
+        "74217c635a62451093fe65643e4cfb4b",
+        "88eb00db19c347e28d858159f716a91c"
+      ],
+      "output": "I'm Captain Blackbeak, the most feared pirate in the Caribbean. I've been sailing the seven seas for nigh on 30 years, and I've never been caught. But I've got a plan, and I'm not afraid to use it.",
+      "model": "HuggingFaceTB/SmolVLM-500M-Instruct",
+      "model_revision": "a7da5b986cb59b408707209984f360a5f4ad7e47",
+      "system_prompt": "",
+      "model_input": "Be a pirate",
+      "image_sha256": "0c0e4365ce25ec9f22daf3bd4d95883bddd9782289ec17fdb7d2b7c4e8b280ff",
+      "image_preprocessing": {
+        "longest_edge": 512,
+        "image_splitting": false
+      },
+      "generated_tokens": 55,
+      "max_new_tokens": 80,
+      "generation_seconds": 6.732,
+      "truncated": false,
+      "decoding": "greedy",
+      "device": "cpu",
+      "live_inference": true,
+      "library_versions": {
+        "torch": "2.8.0+cpu",
+        "transformers": "4.57.1"
+      },
+      "output_constraint": null,
+      "completed_at": "2026-11-14T06:15:24.193390+00:00"
+    },
+    {
+      "job_id": "291780d6991048a59ba0a28f8b0dbabe",
+      "kind": "vision",
+      "case": "custom",
+      "prompt": "Identify task: Identify the tool in the foreground. Name the tool, describe the visible features that support your answer, and state if you are uncertain, but as a pirate",
+      "phase": "custom",
+      "parent_id": null,
+      "requested_at": "2026-11-14T06:16:40.485801+00:00",
+      "comparison_ids": [
+        "7b365ce9a6d34a22919d8174497f6ff7",
+        "74217c635a62451093fe65643e4cfb4b",
+        "88eb00db19c347e28d858159f716a91c"
+      ],
+      "output": "Task: Identify the tool in the foreground.\n\nAnswer: Tape measure.\n\nDescription: The foreground contains a tape measure. The tape measure is black and has a metal band around it. The band is attached to a black pole. The tape measure has a small hole in the center of the band, which is used to measure the length of the tape. The tape measure is used to",
+      "model": "HuggingFaceTB/SmolVLM-500M-Instruct",
+      "model_revision": "a7da5b986cb59b408707209984f360a5f4ad7e47",
+      "system_prompt": "",
+      "model_input": "Identify task: Identify the tool in the foreground. Name the tool, describe the visible features that support your answer, and state if you are uncertain, but as a pirate",
+      "image_sha256": "0c0e4365ce25ec9f22daf3bd4d95883bddd9782289ec17fdb7d2b7c4e8b280ff",
+      "image_preprocessing": {
+        "longest_edge": 512,
+        "image_splitting": false
+      },
+      "generated_tokens": 80,
+      "max_new_tokens": 80,
+      "generation_seconds": 8.212,
+      "truncated": true,
+      "decoding": "greedy",
+      "device": "cpu",
+      "live_inference": true,
+      "library_versions": {
+        "torch": "2.8.0+cpu",
+        "transformers": "4.57.1"
+      },
+      "output_constraint": null,
+      "completed_at": "2026-11-14T06:16:48.854813+00:00"
+    },
+    {
+      "job_id": "0b745658cf6448c1b7d5405f6f94d844",
+      "kind": "vision",
+      "case": "custom",
+      "prompt": "Is the image in the foreground a tape measure or a compass?",
+      "phase": "custom",
+      "parent_id": null,
+      "requested_at": "2026-11-14T06:25:34.075807+00:00",
+      "comparison_ids": [
+        "7b365ce9a6d34a22919d8174497f6ff7",
+        "74217c635a62451093fe65643e4cfb4b",
+        "88eb00db19c347e28d858159f716a91c"
+      ],
+      "output": "No, the image is not in the foreground; it is in the background.",
+      "model": "HuggingFaceTB/SmolVLM-500M-Instruct",
+      "model_revision": "a7da5b986cb59b408707209984f360a5f4ad7e47",
+      "system_prompt": "",
+      "model_input": "Is the image in the foreground a tape measure or a compass?",
+      "image_sha256": "0c0e4365ce25ec9f22daf3bd4d95883bddd9782289ec17fdb7d2b7c4e8b280ff",
+      "image_preprocessing": {
+        "longest_edge": 512,
+        "image_splitting": false
+      },
+      "generated_tokens": 17,
+      "max_new_tokens": 80,
+      "generation_seconds": 3.002,
+      "truncated": false,
+      "decoding": "greedy",
+      "device": "cpu",
+      "live_inference": true,
+      "library_versions": {
+        "torch": "2.8.0+cpu",
+        "transformers": "4.57.1"
+      },
+      "output_constraint": null,
+      "completed_at": "2026-11-14T06:25:37.216324+00:00"
+    },
+    {
+      "job_id": "aa008524d91a429698091fd9674b2b3d",
+      "kind": "vision",
+      "case": "custom",
+      "prompt": "Identify task: Identify the tool in the foreground. Compass? Name the tool, describe the visible features that support your answer, and state if you are uncertain, but as a pirate",
+      "phase": "custom",
+      "parent_id": null,
+      "requested_at": "2026-11-14T06:26:02.467637+00:00",
+      "comparison_ids": [
+        "7b365ce9a6d34a22919d8174497f6ff7",
+        "74217c635a62451093fe65643e4cfb4b",
+        "88eb00db19c347e28d858159f716a91c"
+      ],
+      "output": "Compass. The compass is a tool used to measure angles and directions. It has a needle that points to the cardinal directions (north, south, east, and west). The compass is attached to a post, which is a vertical piece of wood that supports the compass.",
+      "model": "HuggingFaceTB/SmolVLM-500M-Instruct",
+      "model_revision": "a7da5b986cb59b408707209984f360a5f4ad7e47",
+      "system_prompt": "",
+      "model_input": "Identify task: Identify the tool in the foreground. Compass? Name the tool, describe the visible features that support your answer, and state if you are uncertain, but as a pirate",
+      "image_sha256": "0c0e4365ce25ec9f22daf3bd4d95883bddd9782289ec17fdb7d2b7c4e8b280ff",
+      "image_preprocessing": {
+        "longest_edge": 512,
+        "image_splitting": false
+      },
+      "generated_tokens": 56,
+      "max_new_tokens": 80,
+      "generation_seconds": 6.113,
+      "truncated": false,
+      "decoding": "greedy",
+      "device": "cpu",
+      "live_inference": true,
+      "library_versions": {
+        "torch": "2.8.0+cpu",
+        "transformers": "4.57.1"
+      },
+      "output_constraint": null,
+      "completed_at": "2026-11-14T06:26:08.752001+00:00"
+    },
+    {
+      "job_id": "b0453e796d5345bcaf963c85cbe1e938",
+      "kind": "vision",
+      "case": "custom",
+      "prompt": "Identify task: Identify the tool in the foreground. Name the tool, describe the visible features that support your answer, and state if you are uncertain, but as a pirate",
+      "phase": "custom",
+      "parent_id": null,
+      "requested_at": "2026-11-14T06:26:21.197078+00:00",
+      "comparison_ids": [
+        "7b365ce9a6d34a22919d8174497f6ff7",
+        "74217c635a62451093fe65643e4cfb4b",
+        "88eb00db19c347e28d858159f716a91c"
+      ],
+      "output": "Task: Identify the tool in the foreground.\n\nAnswer: Tape measure.\n\nDescription: The foreground contains a tape measure. The tape measure is black and has a metal band around it. The band is attached to a black pole. The tape measure has a small hole in the center of the band, which is used to measure the length of the tape. The tape measure is used to",
+      "model": "HuggingFaceTB/SmolVLM-500M-Instruct",
+      "model_revision": "a7da5b986cb59b408707209984f360a5f4ad7e47",
+      "system_prompt": "",
+      "model_input": "Identify task: Identify the tool in the foreground. Name the tool, describe the visible features that support your answer, and state if you are uncertain, but as a pirate",
+      "image_sha256": "0c0e4365ce25ec9f22daf3bd4d95883bddd9782289ec17fdb7d2b7c4e8b280ff",
+      "image_preprocessing": {
+        "longest_edge": 512,
+        "image_splitting": false
+      },
+      "generated_tokens": 80,
+      "max_new_tokens": 80,
+      "generation_seconds": 8.071,
+      "truncated": true,
+      "decoding": "greedy",
+      "device": "cpu",
+      "live_inference": true,
+      "library_versions": {
+        "torch": "2.8.0+cpu",
+        "transformers": "4.57.1"
+      },
+      "output_constraint": null,
+      "completed_at": "2026-11-14T06:26:29.511616+00:00"
+    },
+    {
+      "job_id": "da04b25bb9024b8a9f08d69a3e6a4030",
+      "kind": "vision",
+      "case": "custom",
+      "prompt": "Identify task: Identify the tool in the foreground. Name the tool, describe the visible features compass that support your answer, and state if you are uncertain, but as a pirate",
+      "phase": "custom",
+      "parent_id": null,
+      "requested_at": "2026-11-14T06:27:07.935907+00:00",
+      "comparison_ids": [
+        "7b365ce9a6d34a22919d8174497f6ff7",
+        "74217c635a62451093fe65643e4cfb4b",
+        "88eb00db19c347e28d858159f716a91c"
+      ],
+      "output": "Task: Identify the tool in the foreground.\n\nAnswer: Compass.\n\nDescription: The foreground contains a wooden table with a metal compass on it. The compass is a classic tool used for navigation, and it is positioned in the center of the table. The metal compass has a simple design with a circular dial and a needle that points north. The dial is marked with numbers, which",
+      "model": "HuggingFaceTB/SmolVLM-500M-Instruct",
+      "model_revision": "a7da5b986cb59b408707209984f360a5f4ad7e47",
+      "system_prompt": "",
+      "model_input": "Identify task: Identify the tool in the foreground. Name the tool, describe the visible features compass that support your answer, and state if you are uncertain, but as a pirate",
+      "image_sha256": "0c0e4365ce25ec9f22daf3bd4d95883bddd9782289ec17fdb7d2b7c4e8b280ff",
+      "image_preprocessing": {
+        "longest_edge": 512,
+        "image_splitting": false
+      },
+      "generated_tokens": 80,
+      "max_new_tokens": 80,
+      "generation_seconds": 8.105,
+      "truncated": true,
+      "decoding": "greedy",
+      "device": "cpu",
+      "live_inference": true,
+      "library_versions": {
+        "torch": "2.8.0+cpu",
+        "transformers": "4.57.1"
+      },
+      "output_constraint": null,
+      "completed_at": "2026-11-14T06:27:16.207467+00:00"
+    },
+    {
+      "job_id": "c619ecf2ee594dbca4a90a3c4f3fe64e",
+      "kind": "vision",
+      "case": "custom",
+      "prompt": "Identify task: Identify the tool in the foreground. Name the tool, describe the visible features that support your answer, and state if you are uncertain, but as a pirate",
+      "phase": "custom",
+      "parent_id": null,
+      "requested_at": "2026-11-14T06:27:20.785559+00:00",
+      "comparison_ids": [
+        "7b365ce9a6d34a22919d8174497f6ff7",
+        "74217c635a62451093fe65643e4cfb4b",
+        "88eb00db19c347e28d858159f716a91c"
+      ],
+      "output": "Task: Identify the tool in the foreground.\n\nAnswer: Tape measure.\n\nDescription: The foreground contains a tape measure. The tape measure is black and has a metal band around it. The band is attached to a black pole. The tape measure has a small hole in the center of the band, which is used to measure the length of the tape. The tape measure is used to",
+      "model": "HuggingFaceTB/SmolVLM-500M-Instruct",
+      "model_revision": "a7da5b986cb59b408707209984f360a5f4ad7e47",
+      "system_prompt": "",
+      "model_input": "Identify task: Identify the tool in the foreground. Name the tool, describe the visible features that support your answer, and state if you are uncertain, but as a pirate",
+      "image_sha256": "0c0e4365ce25ec9f22daf3bd4d95883bddd9782289ec17fdb7d2b7c4e8b280ff",
+      "image_preprocessing": {
+        "longest_edge": 512,
+        "image_splitting": false
+      },
+      "generated_tokens": 80,
+      "max_new_tokens": 80,
+      "generation_seconds": 8.542,
+      "truncated": true,
+      "decoding": "greedy",
+      "device": "cpu",
+      "live_inference": true,
+      "library_versions": {
+        "torch": "2.8.0+cpu",
+        "transformers": "4.57.1"
+      },
+      "output_constraint": null,
+      "completed_at": "2026-11-14T06:27:29.467190+00:00"
+    }
+  ],
+  "responses": {
+    "analysis": "I chose the identify task and the new prompt produced a better result than the originals. The main difference was it provided an explanation as to why it thought it was a tape measure. It pointed to the hole in it and the colors. The response was so long that its message was cut off. My updated request took more than 8 seconds, nearly 4 times longer than the original. However, I told it to respond as a pirate and it ignored that (when requesting to act as a pirate without asking it to identify anything, it acted as a pirate)\n\nI tested a few other prompts. I found out that if I put the word compass in the prompt, it identifies it as a compass."
+  },
+  "extra": {
+    "draft_signature": "29401c49c9283fa2289c8e5a9ac9080c714380e8cfbb3d8056720c27c8b2ddfd",
+    "upstream_run": "86ce549099f74bcb8396bd9a516345bc"
+  }
+}

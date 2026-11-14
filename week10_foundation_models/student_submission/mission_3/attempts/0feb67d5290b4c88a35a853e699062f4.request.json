@@ -1,0 +1,29 @@
+{
+  "job_id": "0feb67d5290b4c88a35a853e699062f4",
+  "kind": "language",
+  "case": "custom",
+  "prompt": "Reach (11,1) while staying beside a wall. Prefer the RIGHT command whenever the next cell is free and remains beside a wall. If RIGHT is blocked at column 3, follow the wall UP to row 1. If RIGHT is blocked at column 7, follow the wall DOWN to row 7. If RIGHT is blocked at column 11, follow the outer wall UP to row 1. Do not move away from the wall.",
+  "phase": "custom",
+  "parent_id": null,
+  "requested_at": "2026-11-14T07:42:49.132961+00:00",
+  "comparison_ids": [
+    "0280b49c49864cb2b744817b7610720e",
+    "42afbda9de5d4796b864cefcf9679f12",
+    "6d78ec3cf1804b1da7aeb8ab1e98f881"
+  ],
+  "task": "robot",
+  "robot_state": {
+    "position": [
+      1,
+      7
+    ],
+    "step": 0,
+    "history": [],
+    "finished": false,
+    "goal_reached": false,
+    "first_goal_step": null,
+    "last_feedback": "No previous action.",
+    "last_decision": null
+  },
+  "simulator_contract": "8da30a943bd97ee39237aa05e8e6800fecdecbef3ce692d7d4e48f851679060f"
+}

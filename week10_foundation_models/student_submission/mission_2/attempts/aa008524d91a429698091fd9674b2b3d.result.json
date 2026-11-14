@@ -1,0 +1,40 @@
+{
+  "status": "complete",
+  "record": {
+    "job_id": "aa008524d91a429698091fd9674b2b3d",
+    "kind": "vision",
+    "case": "custom",
+    "prompt": "Identify task: Identify the tool in the foreground. Compass? Name the tool, describe the visible features that support your answer, and state if you are uncertain, but as a pirate",
+    "phase": "custom",
+    "parent_id": null,
+    "requested_at": "2026-11-14T06:26:02.467637+00:00",
+    "comparison_ids": [
+      "7b365ce9a6d34a22919d8174497f6ff7",
+      "74217c635a62451093fe65643e4cfb4b",
+      "88eb00db19c347e28d858159f716a91c"
+    ],
+    "output": "Compass. The compass is a tool used to measure angles and directions. It has a needle that points to the cardinal directions (north, south, east, and west). The compass is attached to a post, which is a vertical piece of wood that supports the compass.",
+    "model": "HuggingFaceTB/SmolVLM-500M-Instruct",
+    "model_revision": "a7da5b986cb59b408707209984f360a5f4ad7e47",
+    "system_prompt": "",
+    "model_input": "Identify task: Identify the tool in the foreground. Compass? Name the tool, describe the visible features that support your answer, and state if you are uncertain, but as a pirate",
+    "image_sha256": "0c0e4365ce25ec9f22daf3bd4d95883bddd9782289ec17fdb7d2b7c4e8b280ff",
+    "image_preprocessing": {
+      "longest_edge": 512,
+      "image_splitting": false
+    },
+    "generated_tokens": 56,
+    "max_new_tokens": 80,
+    "generation_seconds": 6.113,
+    "truncated": false,
+    "decoding": "greedy",
+    "device": "cpu",
+    "live_inference": true,
+    "library_versions": {
+      "torch": "2.8.0+cpu",
+      "transformers": "4.57.1"
+    },
+    "output_constraint": null,
+    "completed_at": "2026-11-14T06:26:08.752001+00:00"
+  }
+}

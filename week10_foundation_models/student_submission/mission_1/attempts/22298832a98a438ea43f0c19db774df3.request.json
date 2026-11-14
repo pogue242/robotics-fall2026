@@ -1,0 +1,14 @@
+{
+  "job_id": "22298832a98a438ea43f0c19db774df3",
+  "kind": "language",
+  "case": "custom",
+  "prompt": "Travel from your starting location to the shelf where the cup is located. Inspect the cup and report if it is empty and any additional observations",
+  "phase": "custom",
+  "parent_id": null,
+  "requested_at": "2026-11-14T05:45:54.220371+00:00",
+  "comparison_ids": [
+    "850f52e3b72b4f2280b8c81fd3fe5335",
+    "5aefd6336743435fad3cf7745870e44d",
+    "ec0a194e92a64f4bac61aa061a1b97ba"
+  ]
+}
