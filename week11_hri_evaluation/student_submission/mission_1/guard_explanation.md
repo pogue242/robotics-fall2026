@@ -1,0 +1,1 @@
+The readiness guard only releases the cup when the robot is in the "wait_ready" phase and the event/kind is "ready". In the early and missing readiness trace, "ready" happens while the robot is still executing, so it holds the cup instead of releasing it.

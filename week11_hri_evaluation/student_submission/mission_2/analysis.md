@@ -1,0 +1,1 @@
+They are basically the same. I feel like all the initial feedback was good enough, and the top issue was not properly detecting commands, especially confirm. In fact, it detected "confirm" as "cancel" at first. On second thought, feedback should probably be changed to "say yes" since it works and is less likely to be misheard. In a different test, it heard confirm as yes.

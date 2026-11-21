@@ -1,0 +1,6 @@
+{
+  "case": "clear",
+  "phase": "CONFIRM",
+  "message": "I heard a request for {target}. Apply Confirm only if you want the robot to start moving; otherwise keep waiting or correct the cup.",
+  "rationale": "That saying confirm immediately moves the robot."
+}
